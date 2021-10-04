@@ -14,39 +14,86 @@
         </script>
     </head>
     <body>
+        <div id="a1">Hello</div>
+        <div id="a2">Kiran</div>
+        <div id="a3">Kamlesh</div>
+        <div id="a4">Rudransh</div>
         <script>
+            document.getElementById('a1').innerHTML = 'welcome to my first js page';
+            document.getElementById('a2').innerHTML = 'my name is Kiran';
+            document.getElementById('a3').innerHTML = 'my husband name is Mr. Kamlesh';
+            document.getElementById('a4').innerHTML = 'my son name is Rudransh Rathor';
+
             var x=20;//variable decleration and initialization
             var y=40;//variable decleration and initializtion
+            var z=30;
             //1. funcion definition 
             function myFunctionA(x,y){//formal argument/parameter
+                //function body
                 console.log(x+y);
             }
             //funcion calling
             myFunctionA(x,y);//actual argument/parameter
             //2. function definition
             function myFunctionB(name){//formal argument/parameter
-                console.log('Kiran '+name)
+                //function body
+                console.log('Kiran '+name);
             }
             //function calling
             myFunctionB('Rathor');//actual argument/parameter
             //3. function definition
             function myFunctionC(msg){//formal aargument/parameter
+                //function body
                 console.log(msg+' how are you ?');
             }
             //function calling
             myFunctionC('Anjali,');//actual argument/parameter
             //4.function definition
             function myFunctionD(msg2){//formal argument/parameter
+                //function body
                 console.log(msg2+ 'Rudransh');
             }
             //function calling
             myFunctionD('what is your name ? ');//actual argument/parameter
             //5.function definition
             function myFunctionE(paragraph){//formal argument/parameter
+                //function body
                 console.log('what is javascript ? '+paragraph);
             }
             //function calling
-            myFunctionE('JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat')
+            myFunctionE('JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat');//actual argument
+            //6.function defination 
+            function myFunctionF(paragraph2){// formal argument/parameter
+                //function body
+                console.log('Hello Everyone, '+paragraph2);
+            }
+            //function calling
+            myFunctionF('How are you ?');
+            //7. funcion definition 
+            function myFunctionF(x,z){//formal argument/parameter
+                //function body
+                console.log(x+z);
+            }
+            //funcion calling
+            myFunctionA(x,z);//actual argument/parameter
+            
+            // JavaScript to illustrate concat() function 
+            function func() { 
+                // Original string 
+                var str = 'we'; 
+
+                // Joining the strings together 
+                var value = str.concat(' will',' use',' this',' little',' saw'); 
+                document.write(value);     
+            } 
+            function func(){
+                //original string
+                var str = 'we';
+                //joining the string together
+                var value = str.concat(' will',' use',' a',' hammer',' and',' some','nails');
+                document.write(value);
+            }
+func();
         </script>
     </body>
 </html>

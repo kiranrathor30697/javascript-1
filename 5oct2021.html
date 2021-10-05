@@ -88,16 +88,54 @@
             var r3 = myFunctionF(2,4,myFunctionF(2,4,5));
             console.log(r3);
             //function as argument
-            var r4 = myFunctionF(3,4,myFunctionF(2,4,myFunctionF(2,4,myFunctionF(2,4,myFunctionF(2,4,5)))));
+            var r4 = myFunctionF(3,4,myFunctionF(2,4,myFunctionF(2,4,myFunctionD(2,4,myFunctionE(2,4,5)))));
             console.log(r4);
             //6.function definition
-            function myFunctionG(x,y){//formal argument/parameter
+            function myFunctionG(x,y,z){//formal argument/parameter
                 //function body
-                return x+y;
+                return x/y+y/z*50;
             }
             //6. function calling 
-            var r5 = myFunctionG(3,8);//actual argument/parameters
+            var r5 = myFunctionG(3,8,9);//actual argument/parameters
             console.log(r5);
+            //7. function definition
+            function myFunctionH(x,y){//formal argument/parameter
+                //function body
+                return x*y;
+            }
+            //7. function calling
+           // function as argument / again double function calling
+            let r6 = myFunctionH(6,myFunctionD(10,5));
+            console.log(r6);
+            //proper naming convantion
+            //function name camlecase
+            //8. function definition
+            function myFunctionI(x,y){//formal argument/parameter
+                //function body
+                return x-4+y;
+            }
+            //8. function calling
+            let r7 = myFunctionI(8,myFunctionE(9,8));//actual argument/parameter
+            console.log(r7);
+            //9. function definition
+            function myFunctionJ(a,b,c){//formal argument/parameter
+                //function body
+                return a*b/c;
+            }
+            //9. function calling
+            var r8 = myFunctionJ(2,4,myFunctionF(2,4,5));
+            console.log(r8);
+            //function as argument
+            var r9 = myFunctionJ(3,4,myFunctionF(2,4,myFunctionF(2,4,myFunctionF(2,4,myFunctionF(2,4,5)))));
+            console.log(r9);
+            //10.function definition
+            function myFunctionK(a,b,c,d){//formal argument/parameter
+                //function body
+                return a+b-5*c;
+            }
+            //10. function calling 
+            var r10 = myFunctionK(9,8,3,myFunctionJ(8,3,4,myFunctionF(3,2,4,myFunctionH(2,5,4,myFunctionG(2,2,4,myFunctionI(2,4,5,8))))));//actual argument/parameters
+            console.log(r10);
         </script>
     </body>
 </html>

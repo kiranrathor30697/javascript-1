@@ -12,24 +12,67 @@
             var x = 10;//variable decleration
             let y = 20;//variable decleration
 
-            console.log(x+y);
+                console.log(x+y);
+
 
             //1. function definiton
-            function a(x,y){//formal argument/ parameter
+            function functionA(x,y){//formal argument/ parameter
                 //function body
-            console.log(x*y);
+                console.log(x*y);
             }
-
             //1.function calling
-            a(32,56);//actual argument/parameter
-            
+            functionA(32,56);//actual argument/parameter
+
+
             //2. function definition
-            function b(){//formal argument /parameter
+            function functionB(x,y){//formal argument /parameter
                 //function body
+                    return x/y;
             }
-
             //2.function calling
+            var z = functionB(68,34);//actual argument/parameter
+                 console.log(z);
 
+
+            //3. function definition
+            function functionC(x,y){//formal argument/parameter
+                //functon body
+                return x/y;
+            }
+            //3. function calling
+            let r = functionC(9,3);//actual argument/parameter
+                //alert(r);
+                console.log(r);
+
+
+            //4. function definition
+            function functionD(x,y,z){//formal argument/parameter
+                //function body
+                return x+y*z;
+            }
+            //4. function calling
+            var result = functionD(9,4,functionC(9,3,9,functionB(68,34,functionC(3,68,34))));
+                console.log(result);
+
+            //create array
+            var students = ['Kiran','Kamlesh','Rudransh','Anjali','Rameshchandra','Santosh'];
+                console.log('hello '+students[4]+', how are you');
+
+            //5.function definition
+            function functionE(s){//formal argument/parameter
+                //function body
+                for(i=0;i<=5;i++){
+                    console.log('hello '+s[i]+',what are you doing');
+                }
+            }
+            //5. function calling
+            functionE(students);
+
+
+            //for(initialization;condition;incremnt/decrement)
+                for(i=0;i<=5;i++){
+                    console.log('hello '+students[i]+', how are you');
+                }
         </script>
     </head>
     <body>

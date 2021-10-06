@@ -48,10 +48,10 @@
             //4. function definition
             function functionD(x,y,z){//formal argument/parameter
                 //function body
-                return x+y*z;
+                return x+y*z;//function may be return value 
             }
             //4. function calling
-            var result = functionD(9,4,functionC(9,3,9,functionB(68,34,functionC(3,68,34))));
+            var result = functionD(9,4,functionC(9,3,9,functionB(68,34,functionC(3,68,34))));//catch value
                 console.log(result);
 
             //create array
@@ -61,6 +61,8 @@
             //5.function definition
             function functionE(s){//formal argument/parameter
                 //function body
+                /*for(initialization;conition;increment/decrement){
+                }*/
                 for(i=0;i<=5;i++){
                     console.log('hello '+s[i]+',what are you doing');
                 }
